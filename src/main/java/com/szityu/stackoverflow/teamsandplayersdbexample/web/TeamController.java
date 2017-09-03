@@ -46,7 +46,7 @@ public class TeamController {
         try {
             teamRepo.delete(teamId);
         } catch (EmptyResultDataAccessException ignored) {
-            create404Exception(teamId).get();
+            throw create404Exception(teamId).get();
         }
     }
 

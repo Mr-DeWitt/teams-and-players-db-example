@@ -47,7 +47,7 @@ public class PlayerController {
         try {
             playerRepo.delete(playerId);
         } catch (EmptyResultDataAccessException ignored) {
-            create404Exception(playerId).get();
+            throw create404Exception(playerId).get();
         }
     }
 

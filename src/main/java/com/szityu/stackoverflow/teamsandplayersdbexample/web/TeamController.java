@@ -42,7 +42,7 @@ public class TeamController {
     }
 
     @DeleteMapping("/{teamId}")
-    public void saveTeam(@PathVariable Long teamId) {
+    public void deleteTeam(@PathVariable Long teamId) {
         try {
             teamRepo.delete(teamId);
         } catch (EmptyResultDataAccessException ignored) {

@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+#Uncomment it if you want to store the DB into filesystem instead of memory
+#  datasource:
+#    url: jdbc:h2:~/h2-dbs/teams-and-players-db-example;AUTO_SERVER=TRUE;
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
